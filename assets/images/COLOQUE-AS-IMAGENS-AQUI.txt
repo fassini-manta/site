@@ -1,0 +1,7 @@
+Coloque nesta pasta os arquivos abaixo para a primeira versão local:
+
+- estacionamento.jpeg
+- muro-arrimo.jpeg
+- aplicacao-manta.jpeg (imagem de capa do vídeo)
+
+Depois que o Google Drive for conectado, o catálogo passará a carregar as imagens automaticamente.

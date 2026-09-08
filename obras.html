@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obras Realizadas | Fassini Impermeabilizações</title>
+  <meta name="description" content="Confira fotos e vídeos de obras de impermeabilização realizadas pela Fassini em lajes, muros, coberturas e outras estruturas.">
+  <link rel="icon" href="assets/images/logo-fassini.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="works-page">
+  <header>
+    <a class="logo" href="index.html#inicio" aria-label="Fassini Impermeabilizações — início">
+      <img class="logo-image" src="assets/images/logo-fassini.png" alt="Fassini Impermeabilizações">
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="obras.html" aria-current="page">Obras</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#duvidas">Dúvidas</a>
+      <a class="btn small" data-whatsapp>Orçamento</a>
+    </nav>
+    <button id="menu" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="works-hero">
+      <div class="wrap">
+        <p class="kicker">Portfólio Fassini</p>
+        <h1>Obras e serviços realizados.</h1>
+        <p>Escolha um tipo de serviço e confira fotos e vídeos de aplicações executadas pela Fassini.</p>
+      </div>
+    </section>
+
+    <section class="catalog catalog-page" id="catalogo">
+      <div class="catalog-head wrap">
+        <div>
+          <p class="kicker">Catálogo de obras</p>
+          <h2>Encontre o serviço que deseja conhecer.</h2>
+        </div>
+        <p>As categorias seguem a organização das pastas no Google Drive. Novas obras entram no catálogo quando a atualização automática está ativada.</p>
+      </div>
+
+      <div class="filter-panel wrap" aria-labelledby="filter-title">
+        <div class="filter-panel-heading">
+          <strong id="filter-title">Filtre por tipo de serviço</strong>
+          <span id="catalog-status" role="status" aria-live="polite">Carregando obras...</span>
+        </div>
+        <div class="filters filters-prominent" id="catalog-filters"></div>
+      </div>
+
+      <div class="gallery wrap" id="gallery"></div>
+    </section>
+
+    <section class="clients-section wrap" aria-labelledby="clients-title">
+      <div class="clients-heading">
+        <div><p class="kicker dark">Experiência comprovada</p><h2 id="clients-title">Veja alguns clientes atendidos pela Fassini.</h2></div>
+        <p>Empresas de diferentes segmentos que já contaram com os serviços de impermeabilização da Fassini.</p>
+      </div>
+      <div class="clients-grid">
+        <span>Construtora Atenas</span>
+        <span>Bora Construções</span>
+        <span>Mercado Jacomar</span>
+        <span>WP Gerenciadora de Obras</span>
+        <span>Hestia Incorporações Imobiliárias Ltda.</span>
+        <span>Mercado Bavaresco — Litoral do Paraná</span>
+        <span>Klabin Celulose — Ortigueira/PR</span>
+        <span>Construtora Beltrix</span>
+        <span>Votorantim</span>
+        <span>Natel Engenharia</span>
+        <span>Cardoso Empreendimentos</span>
+        <span>Construtora W3D</span>
+        <span>DM Construtora</span>
+        <span>Voor Incorporadora</span>
+        <span>Oliveira Reforma e Acabamentos</span>
+        <span>Alves Cosmo Engenharia Civil</span>
+        <span>LDK Construtora Ltda.</span>
+        <span>Gema Engenharia</span>
+        <span>J&amp;G Construções</span>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="kicker">Precisa de uma solução semelhante?</p>
+      <h2>Conte o que está acontecendo<br>na sua obra.</h2>
+      <p>Envie uma mensagem para solicitar uma avaliação.</p>
+      <a class="btn lightbtn" data-whatsapp>Pedir orçamento pelo WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot wrap">
+      <a class="logo footer-logo" href="index.html#inicio" aria-label="Fassini Impermeabilizações — início">
+        <img class="logo-image" src="assets/images/logo-fassini.png" alt="Fassini Impermeabilizações">
+      </a>
+      <div><strong>Atendimento</strong><span>São José dos Pinhais - PR</span><span>Curitiba e Região Metropolitana</span><a data-whatsapp>(41) 99800-2793</a></div>
+      <div><strong>Redes sociais</strong><a href="https://www.instagram.com/impermeabilizacoes_fassini/" target="_blank" rel="noopener">@impermeabilizacoes_fassini</a></div>
+    </div>
+    <div class="copyright">© 2026 Fassini Impermeabilizações Ltda. — CNPJ 59.932.187/0001-04 <a class="pda-credit" href="https://pdasolucoe.com.br/" target="_blank" rel="noopener"><img src="assets/pda/ass-pda.png" alt="PDA Soluções"></a></div>
+  </footer>
+
+  <a class="float" data-whatsapp aria-label="WhatsApp">✆</a>
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Detalhes da obra">
+    <button id="close" type="button" aria-label="Fechar">×</button>
+    <div id="modal-content"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
