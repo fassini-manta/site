@@ -1,6 +1,6 @@
 const CONFIG = {
   DRIVE_FOLDER_ID: "1S0GkaBaMGhH4-ZD44TeeN75l8WmPd9vC",
-  APPS_SCRIPT_URL: "COLE_AQUI_A_URL_DO_APPS_SCRIPT"
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwzQZH1W2vAHmBMMotFgCnrlJ8hBoB-4gVewlcmZ-nz4KmlI7EJKMh7cGl6EKl0HfyvqA/exec"
 };
 
 const WHATSAPP = "https://wa.me/5541998002793?text=" + encodeURIComponent(
@@ -53,7 +53,27 @@ const DRIVE_SNAPSHOT_ITEMS = [
   driveItem("1XvTcafj8DQfxoagcnJE9TZ2oaKHyzwcv", "Manta asfáltica — foto 7", "Manta asfáltica"),
   driveItem("19eXBF0TqS9h3qA69YeNKhww9Bld06R3R", "Manta asfáltica — foto 8", "Manta asfáltica"),
   driveItem("1i-0imbozakMgI1Y41TkTnpUjOCIGzDjS", "Manta asfáltica — foto 9", "Manta asfáltica"),
-  driveItem("1igVCGgkYPKB6q-DwIJtnKS5TTYbU4rpG", "Construtora Atenas", "Manta asfáltica")
+  driveItem("1igVCGgkYPKB6q-DwIJtnKS5TTYbU4rpG", "Construtora Atenas", "Manta asfáltica"),
+  driveItem(
+  "14PUtmgJlzbQz3CN2sceouJpwfgBP_UW9",
+  "Manta asfáltica dupla camada — Mercado Jacomar, Borda do Campo",
+  "Manta asfáltica",
+  "video"
+),
+
+driveItem(
+  "1VpyDz8iWxFChoKO2MU__XmHfV0GiwB1d",
+  "Manta asfáltica em câmara fria — Mercado Rio Verde",
+  "Manta asfáltica",
+  "video"
+),
+
+driveItem(
+  "1nIdi5K3RyvrqPigBoPejGhIifqmzsn6p",
+  "Manta asfáltica com maçarico de alta pressão — São Luís do Purunã",
+  "Manta asfáltica",
+  "video"
+)
 ];
 
 let projects = [...DRIVE_SNAPSHOT_ITEMS];
