@@ -196,11 +196,22 @@ async function loadDriveCatalog() {
     const data = await response.json();
     if (data.ok === false || !Array.isArray(data.items)) throw new Error(data.error || "Resposta inválida");
 
-    projects = data.items.map(item => ({
-      ...item,
-      category: item.category || "Outros",
-      description: item.description || `Serviço de ${(item.category || "impermeabilização").toLowerCase()} executado pela Fassini Impermeabilizações.`
-    }));
+projects = data.items.map(item => {
+  const category = item.category || item.categoria || "Outros";
+  const type = item.type || item.tipo || "image";
+
+  return {
+    ...item,
+    title: item.title || item.titulo || item.name || item.nome || "Obra realizada",
+    category,
+    type,
+    image: item.image || item.thumbnailUrl || item.thumbnail || item.src || driveThumbnail(item.id),
+    preview: item.preview || item.previewUrl || (type === "video" ? drivePreview(item.id) : undefined),
+    viewUrl: item.viewUrl || item.url || driveView(item.id),
+    description: item.description || `Serviço de ${category.toLowerCase()} executado pela Fassini Impermeabilizações.`
+  };
+});
+
     currentFilter = "Todos";
     renderFilters();
     renderGallery();
